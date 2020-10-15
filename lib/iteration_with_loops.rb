@@ -3,12 +3,12 @@ def join_nested_strings(src)
   # Combine all Strings present in the AoA into a single value and return it
 concat_string = ""
 row_index = 0
-while row_index < guessing_game_grid.count do
+while row_index < src.count do
   element_index = 0
-  while element_index < guessing_game_grid[row_index].count do
-    if guessing_game_grid[row_index][element_index].class = String
-      concat_string += guessing_game_grid[row_index][element_index]
-    end 
+  while element_index < src[row_index].count do
+    if src[row_index][element_index].class = String
+      concat_string += src[row_index][element_index]
+    end
     element_index += 1
   end
   row_index += 1
